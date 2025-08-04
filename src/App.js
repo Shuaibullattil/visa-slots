@@ -1,13 +1,16 @@
 import Navbar from "./components/Navbar";
 import Herosection from "./components/Herosection";
-
+import OurServices from "./components/OurServices";
+import Benefits from "./components/Benefits";
 
 
 export default function App() {
   return (
-    <div className="py-2 px-8">
+    <div className="py-2">
       <Navbar />
       <Herosection />
+      <OurServices />
+      <Benefits />
     </div>
   );
 }
