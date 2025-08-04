@@ -27,8 +27,27 @@ export default function Benefits(){
 
                     </div>
 
-                    {/* row 2 to show numbers */}
-                    <div>
+                    {/* row 2 to show numbers grid 2*2 */}
+                    <div className='grid grid-cols-2 grid-rows-2 gap-4 m-16'>
+                        <div className='flex flex-col items-center justify-center bg-[#FAF8ED] rounded-2xl py-4'>
+                            <p className='text-[#034833] font-bold font-700 text-[38px]'>1,500+</p>
+                            <p className='text-[#5B5F62] font-medium font-500 text-[16px]'>Routes</p>
+                        </div>
+
+                        <div className='flex flex-col items-center justify-center bg-[#FAF8ED] rounded-2xl py-4'>
+                            <p className='text-[#034833] font-bold font-700 text-[38px]'>50+</p>
+                            <p className='text-[#5B5F62] font-medium font-500 text-[16px]'>Cities</p>
+                        </div>
+
+                        <div className='flex flex-col items-center justify-center bg-[#FAF8ED] rounded-2xl py-4'>
+                            <p className='text-[#034833] font-bold font-700 text-[38px]'>50+</p>
+                            <p className='text-[#5B5F62] font-medium font-500 text-[16px]'>Premium Airlines</p>
+                        </div>
+
+                        <div className='flex flex-col items-center justify-center bg-[#FAF8ED] rounded-2xl py-4'>
+                            <p className='text-[#034833] font-bold font-700 text-[38px]'>12k+</p>
+                            <p className='text-[#5B5F62] font-medium font-500 text-[16px]'>Happy Customers</p>
+                        </div>
                         
                     </div>
                 </div>
