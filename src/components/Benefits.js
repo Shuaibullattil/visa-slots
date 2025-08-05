@@ -6,7 +6,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function Benefits(){
     return(
-        <div className='w-full bg-green-950 relative'>
+        <div className='w-full bg-green-950 relative mb-32'>
             <img src={BackgroundMap} alt="Loading.." className="w-full absolute top-0 left-0 z-0 object-cover h-full" />
             
             <div className="grid grid-cols-2 z-10">
