@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="py-2">
+    <div className="">
       <Navbar />
       <Herosection />
       <OurServices />
