@@ -13,7 +13,7 @@ export default function Herosection() {
           <p className="text-[#F66F4D] text-[12px] sm:text-[18px] md:text-[20px] px-4 py-2 bg-[rgba(246,111,77,0.1)] rounded-full">
             AI-Powered • Instant Results
           </p>
-          <p className="text-[28px] sm:text-[40px] md:text-[50px] font-bold text-green-950 leading-tight">
+          <p className="text-[28px] sm:text-[40px] md:text-[50px] font-bold text-[#034833] leading-tight">
             Book a Schengen Visa Appointment in <span className="text-[#F66F4D]">1 week</span>
           </p>
           <p className="text-gray-700 text-[12px] sm:text-[18px] font-normal">

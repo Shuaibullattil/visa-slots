@@ -1,30 +1,54 @@
-import { ArrowUpRight } from "lucide-react";
-import Logo from "../assets/Logo.svg";
+import { useState } from "react";
+import { ArrowUpRight, Menu, X } from "lucide-react";
+import Orangelogo from "../assets/orange logo.svg";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const navLinks = ["OUR SERVICES", "HOW TO START", "REVIEWS", "DOCUMENTS", "FAQ"];
+
   return (
-    <div className="w-full flex items-center justify-between px-8 py-4">
-      {/* Left: Logo */}
-      <div className="flex items-center space-x-2 bg-white rounded-full px-4 py-2">
-        <img src={Logo} alt="Logo" className="h-70 w-242" />
-      </div>
+    <nav className="w-full px-4 md:px-16 py-4 bg-white md:bg-transparent">
+      {/* Top Navbar */}
+      <div className="flex items-center justify-between">
+        {/* Logo */}
+        <div className="flex items-center gap-2 bg-white px-4 py-2 h-[54px] md:h-[70px] rounded-full">
+          <img src={Orangelogo} alt="Visaslots Logo" className="h-[36px] w-[36px] md:h-[44px] md:w-[44px]" />
+          <p className="font-bold text-[16px] md:text-[24px] text-[#034833]">Visaslots</p>
+        </div>
 
-      {/* Center: Nav links */}
-      <div className="hidden md:flex items-center bg-white rounded-full px-6 py-3 space-x-6 text-sm font-semibold text-[#053b35]">
-        <a href="#">OUR SERVICES</a>
-        <a href="#">HOW TO START</a>
-        <a href="#">REVIEWS</a>
-        <a href="#">DOCUMENTS</a>
-        <a href="#">FAQ</a>
-      </div>
+        {/* Desktop Nav Links */}
+        <div className="hidden md:flex items-center bg-white rounded-full px-8 py-2 h-[70px] space-x-10 text-[#053b35] text-[14px] font-medium">
+          {navLinks.map((link) => (
+            <a href="#" key={link} className="hover:text-[#F66F4D] transition">{link}</a>
+          ))}
+        </div>
 
-      {/* Right: Button */}
-      <div>
-        <button className="w-242 flex items-center space-x-2 bg-[#f66f4d] text-white font-semibold px-6 py-3 rounded-full hover:bg-[#e85e3d] transition">
+        {/* Desktop TRY VISABOT */}
+        <button className="hidden md:flex items-center space-x-3 px-6 py-4 bg-[#F66F4D] rounded-full text-[#FAF8ED] font-bold hover:opacity-90 transition">
           <span>TRY VISABOT</span>
-          <ArrowUpRight size={18} className="stroke-white" />
+          <ArrowUpRight className="stroke-white border-2 rounded-full h-[32px] w-[32px]" />
         </button>
+
+        {/* Mobile Toggle */}
+        <div className="md:hidden flex items-center gap-3">
+          <button className="flex items-center gap-2 px-4 py-3 bg-[#F66F4D] rounded-full text-[#FAF8ED] font-bold text-sm hover:opacity-90 transition">
+            TRY VISABOT
+          </button>
+          <button onClick={() => setIsOpen(!isOpen)} className="text-[#053b35]">
+            {isOpen ? <X size={32} /> : <Menu size={32} />}
+          </button>
+        </div>
       </div>
-    </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden mt-4 py-6 flex flex-col items-center space-y-6 text-[#053b35] text-[16px] font-medium bg-white rounded-xl">
+          {navLinks.map((link) => (
+            <a href="#" key={link} className="hover:text-[#F66F4D] transition">{link}</a>
+          ))}
+        </div>
+      )}
+    </nav>
   );
 }
