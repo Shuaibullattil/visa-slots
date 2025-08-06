@@ -7,8 +7,10 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="">
-      <Navbar />
+    <div className="relative md:mt-12">
+      <div className="md:fixed md:top-0 w-full z-50 bg-transparent">
+        <Navbar />
+      </div>
       <Herosection />
       <OurServices />
       <Benefits />

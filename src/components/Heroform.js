@@ -2,7 +2,7 @@
 
 export default function HeroForm() {
   return (
-    <div className="flex flex-col items-start justify-center space-y-4 w-full">
+    <div className="flex flex-col items-start justify-center space-y-4 w-full md:pr-32">
       {/* First row: Going to & Visa Type */}
       <div className="flex flex-col items-start justify-center space-y-4 w-full">
         <div className="flex flex-row gap-1 w-full">

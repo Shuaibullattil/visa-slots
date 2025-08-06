@@ -32,7 +32,7 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <div className="md:hidden flex items-center gap-3">
-          <button className="flex items-center gap-2 px-4 py-3 bg-[#F66F4D] rounded-full text-[#FAF8ED] font-bold text-sm hover:opacity-90 transition">
+          <button className="flex items-center gap-2 px-4 py-3 bg-[#F66F4D] rounded-full text-[#FAF8ED] font-bold text-sm hover:bg-[#d05e41] transition">
             TRY VISABOT
           </button>
           <button onClick={() => setIsOpen(!isOpen)} className="text-[#053b35]">
