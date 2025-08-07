@@ -1,6 +1,6 @@
 # Visaslots Web UI
 
-A responsive and animated React application built using **React**, **Tailwind CSS**, **AOS (Animate on Scroll)**, and **shadcn/ui**.
+A responsive and animated React application built using **React**, **Tailwind CSS**, and **shadcn/ui**.
 
 ## 🚀 Demo
 
