@@ -9,13 +9,21 @@ import plusperson from "../assets/icons/plusperson.svg";
 import smile from "../assets/icons/smile.svg";
 import quote from "../assets/quotes.svg";
 import stars from "../assets/Stars.svg";
+import { useEffect } from "react";
 
 export default function ServicesSection() {
+
+  useEffect(() => {
+  if (window.AOS) {
+    window.AOS.init({ duration: 800, once: true });
+    window.AOS.refresh(); // Force refresh in case component was already in view
+  }
+}, []);
   return (
-    <div className="px-8 md:px-16 bg-[#FAF8ED] my-4 md:my-12">
+    <div className="px-8 md:px-16 bg-[#FAF8ED] my-4 md:my-16 fade-in">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Left Column */}
-        <div className="md:col-span-1 flex flex-col gap-6">
+        <div className="md:col-span-1 flex flex-col gap-6 fade-in">
           <div>
             <h2 className="text-[46px] font-bold text-[#034833]">Our Services</h2>
             <p className="text-[#666] text-[16px] tracking-tight">
@@ -24,7 +32,7 @@ export default function ServicesSection() {
           </div>
 
           {/* Testimonial for md and up */}
-          <div className="p-4 hidden md:flex flex-col md:mt-[250px]">
+          <div className="p-4 hidden md:flex flex-col md:mt-[250px] fade-in">
             <img src={quote} alt="trustpilot" className="h-8 w-8" />
             <div className="text-[18px] font-bold text-[#034833]">
               Best on the market
@@ -43,7 +51,11 @@ export default function ServicesSection() {
         {/* Cards Section */}
         <div className="lg:col-span-2 md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Notifications Card */}
-          <div className="border border-[#034833] rounded-xl p-4 md:p-6 bg-white flex flex-col justify-between">
+          <div className="border border-[#034833] rounded-xl p-4 md:p-6 bg-white flex flex-col justify-between "
+            data-aos="fade-up"
+            data-aos-delay="0"
+            data-aos-duration="800"
+            >
             <div>
               <h3 className="text-[32px] font-semibold text-[#034833] tracking-tighter">Notifications</h3>
               <p className="text-[54px] font-bold md:mt-2 text-[#034833]">
@@ -70,14 +82,17 @@ export default function ServicesSection() {
                 </div>
               </div>
             </div>
-            <button className="relative flex space-x-4 px-2 md:px-8 py-2 bg-[#F66F4D] h-[54px] md:h-[70px] rounded-full text-[#FAF8ED] font-bold items-center justify-center">
+            <button className="relative flex space-x-4 px-2 md:px-8 py-2 bg-[#F66F4D] h-[54px] md:h-[70px] rounded-full text-[#FAF8ED] font-bold items-center justify-center hover:scale-105 active:scale-95 transition duration-300">
               <span className="pr-8 md:pr-12">GET APPOINTMENT ALERT</span>
               <ArrowUpRight className="stroke-white border-2 rounded-full h-[36px] w-[36px] md:h-[52px] md:w-[52px] absolute right-2" />
             </button>
           </div>
 
           {/* Auto Booking Card */}
-          <div className="border border-[#034833] rounded-xl p-4 md:p-6 bg-white flex flex-col justify-between">
+          <div className="border border-[#034833] rounded-xl p-4 md:p-6 bg-white flex flex-col justify-between "
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="800">
             <div>
               <h3 className="text-[32px] font-semibold text-[#FF9000] tracking-tighter">Auto Booking</h3>
               <p className="text-[54px] font-bold mt-2 text-[#FF9000]">
@@ -104,7 +119,7 @@ export default function ServicesSection() {
                 </div>
               </div>
             </div>
-            <button className="relative flex space-x-4 px-8 py-2 bg-[#F66F4D] h-[54px] md:h-[70px] rounded-full text-[#FAF8ED] font-bold items-center justify-center">
+            <button className="relative flex space-x-4 px-8 py-2 bg-[#F66F4D] h-[54px] md:h-[70px] rounded-full text-[#FAF8ED] font-bold items-center justify-center hover:scale-105 active:scale-95 transition duration-300">
               <span className="pr-12">TRY AUTO BOOKING</span>
               <ArrowUpRight className="stroke-white border-2 rounded-full h-[36px] w-[36px] md:h-[52px] md:w-[52px] absolute right-2" />
             </button>
@@ -112,7 +127,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Testimonial for mobile (below md) */}
-        <div className="md:hidden p-4 flex flex-col">
+        <div className="md:hidden p-4 flex flex-col fade-in">
           <img src={quote} alt="trustpilot" className="h-8 w-8" />
           <div className="text-[18px] font-bold text-[#034833]">
             Best on the market

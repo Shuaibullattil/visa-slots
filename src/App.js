@@ -3,8 +3,6 @@ import Herosection from "./components/Herosection";
 import OurServices from "./components/OurServices";
 import Benefits from "./components/Benefits";
 import Footer from "./components/Footer";
-
-
 export default function App() {
   return (
     <div className="relative md:mt-12">

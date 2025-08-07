@@ -8,6 +8,7 @@ module.exports = {
       fontFamily: {
         sen: ['Sen', 'sans-serif'],
       },
+      scale: ['active'],
     },
   },
   plugins: [],

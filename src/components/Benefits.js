@@ -17,7 +17,7 @@ export default function Benefits() {
 
         {/* Left Column: Mockup Image */}
         <div className="col-span-1 flex items-center justify-center p-8">
-          <img src={Mockup} alt="Mockup" className="py-12 max-w-full h-auto" />
+          <img src={Mockup} alt="Mockup" className="py-12 max-w-full h-auto hover:scale-105 transition duration-300" />
         </div>
 
         {/* Right Column: Details */}
@@ -33,7 +33,7 @@ export default function Benefits() {
             </p>
 
             {/* Button */}
-            <button className="flex items-center space-x-4 px-8 py-4 bg-[#F66F4D] rounded-full text-[#FAF8ED] font-bold hover:opacity-90 transition">
+            <button className="flex items-center space-x-4 px-8 py-4 bg-[#F66F4D] rounded-full text-[#FAF8ED] font-bold hover:scale-105 transition duration-300">
               <span>TRY VISABOT</span>
               <ArrowUpRight className="stroke-white border-2 rounded-full h-[36px] w-[36px]" />
             </button>

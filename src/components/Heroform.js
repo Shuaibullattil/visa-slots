@@ -5,7 +5,7 @@ export default function HeroForm() {
       <div className="flex flex-col items-start justify-center space-y-4 w-full">
         <div className="flex flex-row gap-1 w-full">
           <div className="flex-[0_0_60%] relative">
-            <select className="w-full px-4 py-3 rounded-full text-[14px] md:text-[16px] text-gray-600 bg-white h-[64px] md:h-[70px] appearance-none border-2 hover:border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-200 pr-10">
+            <select className="w-full px-4 py-3 rounded-full text-[14px] md:text-[16px] text-gray-600 bg-white h-[64px] md:h-[70px] appearance-none hover:border-[#F66F4D] transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#F66F4D] pr-10">
               <option value="" disabled selected>Going to</option>
               <option value="estonia">🇪🇪 Estonia</option>
               <option value="ireland">🇮🇪 Ireland</option>
@@ -17,9 +17,9 @@ export default function HeroForm() {
               </svg>
             </div>
           </div>
-          
+
           <div className="flex-[0_0_37%] mx-2 relative">
-            <select className="w-full px-2 py-3 rounded-full text-[14px] md:text-[16px] text-gray-600 bg-white h-[64px] md:h-[70px] appearance-none border-2 hover:border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-200 pr-10">
+            <select className="w-full px-2 py-3 rounded-full text-[14px] md:text-[16px] text-gray-600 bg-white h-[64px] md:h-[70px] appearance-none border-2 hover:border-[#F66F4D] transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#F66F4D] pr-10">
               <option value="" disabled selected>Visa type</option>
               <option value="business">Business</option>
               <option value="others">Others (Except Tourism)</option>
@@ -34,11 +34,11 @@ export default function HeroForm() {
           </div>
         </div>
       </div>
-      
+
       {/* Second row: Application & City */}
       <div className="flex flex-row md:flex-row gap-4 w-full">
         <div className="flex-1 relative">
-          <select className="w-full px-4 py-3 rounded-full text-[14px] md:text-[16px] text-gray-600 bg-white h-[64px] md:h-[70px] appearance-none border-2 hover:border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-200 pr-10">
+          <select className="w-full px-4 py-3 rounded-full text-[14px] md:text-[16px] text-gray-600 bg-white h-[64px] md:h-[70px] appearance-none border-2 hover:border-[#F66F4D] transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#F66F4D] pr-10">
             <option value="" disabled selected>Select an application</option>
             <option value="finland">🇫🇮 Finland</option>
             <option value="france">🇫🇷 France</option>
@@ -52,9 +52,9 @@ export default function HeroForm() {
             </svg>
           </div>
         </div>
-        
+
         <div className="flex-1 relative">
-          <select className="w-full px-4 py-3 rounded-full text-[14px] md:text-[16px] text-gray-600 bg-white h-[64px] md:h-[70px] appearance-none border-2 hover:border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-200 pr-10">
+          <select className="w-full px-4 py-3 rounded-full text-[14px] md:text-[16px] text-gray-600 bg-white h-[64px] md:h-[70px] appearance-none border-2 hover:border-[#F66F4D] transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#F66F4D] pr-10">
             <option value="" disabled selected>Select application city</option>
             <option value="birmingham">Birmingham</option>
             <option value="cardiff">Cardiff</option>
@@ -69,10 +69,10 @@ export default function HeroForm() {
           </div>
         </div>
       </div>
-      
+
       {/* Third row: Button */}
       <div className="w-full">
-        <button className="w-full bg-[#F66F4D] text-white py-3 rounded-full font-semibold shadow hover:opacity-90 transition h-[64px] md:h-[70px]">
+        <button className="w-full bg-[#F66F4D] text-white py-3 rounded-full font-semibold shadow hover:scale-105 active:scale-95 transition duration-300 h-[64px] md:h-[70px]">
           Find Appointments
         </button>
       </div>

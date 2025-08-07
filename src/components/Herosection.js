@@ -11,7 +11,7 @@ export default function Herosection() {
       </div>
       
       {/* Left column with 2 rows */}
-      <div className="col-span-1 grid grid-rows-2 gap-6 p-4 md:p-8">
+      <div className="col-span-1 grid grid-rows-2 gap-6 p-4 md:p-8 fade-in">
         
         {/* Row 1 Tagline*/}
         <div className="flex flex-col items-start justify-center space-y-4">
@@ -35,7 +35,7 @@ export default function Herosection() {
       </div>
 
       {/* Right column */}
-      <div className="hidden col-span-1 md:flex items-center justify-center px-4 md:px-8">
+      <div className="hidden col-span-1 md:flex items-center justify-center px-4 md:px-8 fade-in">
         <img src={people} alt="People" className="w-full h-auto max-w-full object-contain" />
       </div>
     </div>
