@@ -51,7 +51,7 @@ export default function ServicesSection() {
         {/* Cards Section */}
         <div className="lg:col-span-2 md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Notifications Card */}
-          <div className="border border-[#034833] rounded-xl p-4 md:p-6 bg-white flex flex-col justify-between "
+          <div className="border border-[#034833] rounded-xl p-4 md:p-6 bg-white flex flex-col justify-between hover:shadow-2xl transition duration-300"
             data-aos="fade-up"
             data-aos-delay="0"
             data-aos-duration="800"
@@ -89,7 +89,7 @@ export default function ServicesSection() {
           </div>
 
           {/* Auto Booking Card */}
-          <div className="border border-[#034833] rounded-xl p-4 md:p-6 bg-white flex flex-col justify-between "
+          <div className="border border-[#034833] rounded-xl p-4 md:p-6 bg-white flex flex-col justify-between  hover:shadow-2xl transition duration-300 "
           data-aos="fade-up"
           data-aos-delay="300"
           data-aos-duration="800">

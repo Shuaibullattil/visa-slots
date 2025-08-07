@@ -5,8 +5,8 @@ import Benefits from "./components/Benefits";
 import Footer from "./components/Footer";
 export default function App() {
   return (
-    <div className="relative md:mt-12">
-      <div className="md:fixed md:top-0 w-full z-50 bg-transparent">
+    <div className="relative mt-4 md:mt-12">
+      <div className="fixed md:top-0 w-full z-50 bg-transparent">
         <Navbar />
       </div>
       <Herosection />

@@ -8,7 +8,7 @@ export default function Navbar() {
   const navLinks = ["OUR SERVICES", "HOW TO START", "REVIEWS", "DOCUMENTS", "FAQ"];
 
   return (
-    <nav className="w-full px-4 md:px-16 py-4 bg-white md:bg-transparent">
+    <nav className="w-full px-2 md:px-16 py-2  bg-white rounded-full md:rounded-none md:bg-transparent">
       {/* Top Navbar */}
       <div className="flex items-center justify-between">
         {/* Logo */}
