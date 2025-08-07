@@ -26,6 +26,8 @@ cd visaslots
 
 ```bash
 npm install
+npm install @radix-ui/react-dropdown-menu lucide-react clsx tailwind-variants
+npm install react-world-flags
 ```
 
 ### 3. Start the development server
