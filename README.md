@@ -56,5 +56,3 @@ The project will be running at `http://localhost:3000`.
 ## 📄 License
 
 This project is licensed under the MIT License.
-
-```
