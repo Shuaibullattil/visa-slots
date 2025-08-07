@@ -25,9 +25,9 @@ export default function Navbar() {
         </div>
 
         {/* Desktop TRY VISABOT */}
-        <button className="hidden md:flex items-center space-x-3 px-6 py-4 bg-[#F66F4D] rounded-full text-[#FAF8ED] font-bold hover:scale-105 active:scale-95 transition duration-300">
-          <span>TRY VISABOT</span>
-          <ArrowUpRight className="stroke-white border-2 rounded-full h-[32px] w-[32px]" />
+        <button className="hidden md:flex items-center space-x-2 px-2 py-2 md:px-4 md:py-2 bg-[#F66F4D] rounded-full text-[#FAF8ED] font-bold hover:scale-105 transition duration-300 active:scale-95">
+          <span className='px-2 md:px-4'>TRY VISABOT</span>
+          <ArrowUpRight className="stroke-white border-2 rounded-full h-[44px] w-[44px] md:h-[54px] md:w-[54px] p-2" />
         </button>
 
         {/* Mobile Toggle */}

@@ -36,7 +36,7 @@ export default function Herosection() {
 
       {/* Right column */}
       <div className="hidden col-span-1 md:flex items-center justify-center px-4 md:px-8 fade-in">
-        <img src={people} alt="People" className="w-full h-auto max-w-full object-contain" />
+        <img src={people} alt="People" className="w-full h-auto max-w-full object-contain hover:scale-105 transition duration-300" />
       </div>
     </div>
   );

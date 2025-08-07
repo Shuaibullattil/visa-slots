@@ -20,7 +20,7 @@ export default function ServicesSection() {
   }
 }, []);
   return (
-    <div className="px-8 md:px-16 bg-[#FAF8ED] my-4 md:my-16 fade-in">
+    <div className="px-8 md:px-16 bg-[#FAF8ED] my-12 md:my-16 fade-in">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Left Column */}
         <div className="md:col-span-1 flex flex-col gap-6 fade-in">
